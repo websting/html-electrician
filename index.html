@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <title>VoltPro Electrical | Premium Electrician Template</title>
 
@@ -12,10 +19,10 @@
   </head>
 
   <body class="bg-slate-50 text-slate-800">
+
     <!-- ===========================
          NAVIGATION
     ============================ -->
-
     <header
       id="navbar"
       class="fixed top-0 left-0 z-50 w-full transition-all duration-300"
@@ -23,24 +30,20 @@
       <div class="container">
         <nav class="flex h-20 items-center justify-between">
           <!-- Logo -->
-
           <a href="#hero" class="text-3xl font-black tracking-tight">
             <span class="logo-primary"> Volt </span>
-
             <span class="text-amber-500"> Pro </span>
           </a>
 
-          <!-- Desktop -->
-
+          <!-- Desktop Navigation Links -->
           <ul
-            class="text-slate-500 hidden items-center gap-10 font-medium lg:flex"
+            class="text-slate-500 items-center gap-10 font-medium lg:flex hidden"
           >
             <li>
               <a class="nav-link hover:text-amber-400 transition" href="#hero"
                 >Home</a
               >
             </li>
-
             <li>
               <a
                 class="nav-link hover:text-amber-400 transition"
@@ -48,13 +51,11 @@
                 >Services</a
               >
             </li>
-
             <li>
               <a class="nav-link hover:text-amber-400 transition" href="#about"
                 >About</a
               >
             </li>
-
             <li>
               <a
                 class="nav-link hover:text-amber-400 transition"
@@ -89,7 +90,7 @@
             Get Quote
           </a>
 
-          <!-- Mobile -->
+          <!-- Mobile Menu Button -->
 
           <button id="menuBtn" class="menu-btn lg:hidden">☰</button>
         </nav>
@@ -102,7 +103,7 @@
 
     <div
       id="mobileMenu"
-      class="fixed inset-0 z-40 hidden bg-slate-950/90 backdrop-blur-sm lg:hidden"
+      class="fixed inset-0 z-40  bg-slate-950/90 backdrop-blur-sm hidden"
     >
       <div
         class="flex h-full flex-col items-center justify-center gap-10 text-slate-300"
@@ -129,8 +130,8 @@
       id="hero"
       class="relative flex min-h-screen items-center overflow-hidden bg-slate-950 pt-20 py-32"
     >
-      <!-- Background Grid -->
 
+      <!-- Background Grid -->
       <div
         class="absolute inset-0 opacity-[0.04]"
         style="
@@ -157,29 +158,36 @@
         <!-- LEFT -->
 
         <div>
+
+          <!-- Badge -->
+
           <span
             class="mb-6 inline-flex rounded-full border border-amber-500/30 bg-amber-500/10 px-4 py-2 text-sm font-semibold text-amber-400"
           >
             LICENSED • INSURED • 24/7 EMERGENCY
           </span>
 
+          <!-- Divider -->
+
           <div class="mb-8 h-1 w-24 rounded-full bg-amber-500"></div>
+
+          <!--Title -->
 
           <h1
             class="mb-8 text-5xl font-black leading-tight text-white md:text-7xl"
-          >
-            Powering
-
-            <span class="text-amber-500"> Homes </span>
-
+          >Powering<span class="text-amber-500"> Homes </span>
             Businesses & Communities
           </h1>
+
+          <!-- Subtitle -->
 
           <p class="mb-10 max-w-xl text-lg leading-8 text-slate-300">
             Premium residential and commercial electrical services. Safe
             installations, expert repairs and dependable workmanship backed by
             years of experience.
           </p>
+
+          <!-- CTA Buttons -->
 
           <div class="flex flex-wrap gap-5">
             <a href="#contact" class="btn btn-primary"> Get Free Quote </a>
@@ -223,6 +231,7 @@
         <!-- RIGHT -->
 
         <div class="relative">
+          <!-- Background Glow -->
           <div
             class="absolute inset-0 scale-110 rounded-full bg-amber-500/20 blur-[100px]"
           ></div>
@@ -235,6 +244,7 @@
             class="absolute left-1/2 top-1/2 h-162.5 w-162.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/5"
           ></div>
 
+          <!-- Image -->
           <img
             src="/images/hero/electrician.jpg"
             alt="Professional Electrician"
@@ -257,7 +267,7 @@
         </div>
       </div>
 
-      <!-- Scroll -->
+      <!-- Scroll Indicator -->
 
       <a
         href="#trust"
@@ -278,7 +288,8 @@
     <section id="trust" class="relative -mt-16 z-30 pb-24">
       <div class="container">
         <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-          <!-- Card -->
+
+          <!-- Card #1 -->
 
           <div
             class="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
@@ -297,7 +308,7 @@
             </p>
           </div>
 
-          <!-- Card -->
+          <!-- Card #2 -->
 
           <div
             class="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
@@ -316,7 +327,7 @@
             </p>
           </div>
 
-          <!-- Card -->
+          <!-- Card #3 -->
 
           <div
             class="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
@@ -335,7 +346,7 @@
             </p>
           </div>
 
-          <!-- Card -->
+          <!-- Card #4 -->
 
           <div
             class="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
@@ -363,6 +374,9 @@
 
     <section id="services" class="reveal py-32 bg-slate-50">
       <div class="container">
+
+        <!-- Heading -->
+
         <div class="max-w-3xl mx-auto text-center mb-20">
           <span
             class="inline-flex rounded-full bg-amber-100 px-4 py-2 text-sm font-semibold text-amber-600"
@@ -370,10 +384,14 @@
             OUR SERVICES
           </span>
 
+          <!-- Title -->
+
           <h2 class="mt-6 text-5xl font-black text-slate-900">
             Complete Electrical
             <span class="text-amber-500">Solutions</span>
           </h2>
+
+          <!-- Description -->
 
           <p class="mt-6 text-lg text-slate-600 leading-8">
             Residential, commercial and emergency electrical work completed
@@ -381,8 +399,11 @@
           </p>
         </div>
 
+        <!-- Services Grid -->
+
         <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-          <!-- Card -->
+
+          <!-- Card #1 -->
 
           <div
             class="group rounded-3xl bg-white p-10 shadow-lg transition duration-500 hover:-translate-y-3 hover:shadow-2xl"
@@ -401,7 +422,7 @@
             </p>
           </div>
 
-          <!-- Card -->
+          <!-- Card #2 -->
 
           <div
             class="group rounded-3xl bg-white p-10 shadow-lg transition duration-500 hover:-translate-y-3 hover:shadow-2xl"
@@ -420,7 +441,7 @@
             </p>
           </div>
 
-          <!-- Card -->
+          <!-- Card #3 -->
 
           <div
             class="group rounded-3xl bg-white p-10 shadow-lg transition duration-500 hover:-translate-y-3 hover:shadow-2xl"
@@ -439,7 +460,7 @@
             </p>
           </div>
 
-          <!-- Card -->
+          <!-- Card #4 -->
 
           <div
             class="group rounded-3xl bg-white p-10 shadow-lg transition duration-500 hover:-translate-y-3 hover:shadow-2xl"
@@ -458,7 +479,7 @@
             </p>
           </div>
 
-          <!-- Card -->
+          <!-- Card #5 -->
 
           <div
             class="group rounded-3xl bg-white p-10 shadow-lg transition duration-500 hover:-translate-y-3 hover:shadow-2xl"
@@ -477,7 +498,7 @@
             </p>
           </div>
 
-          <!-- Card -->
+          <!-- Card #6 -->
 
           <div
             class="group rounded-3xl bg-white p-10 shadow-lg transition duration-500 hover:-translate-y-3 hover:shadow-2xl"
@@ -504,6 +525,7 @@
 =========================== -->
 
     <section id="about" class="reveal relative overflow-hidden bg-white py-32">
+
       <!-- Background Glow -->
 
       <div
@@ -515,6 +537,7 @@
       ></div>
 
       <div class="container relative z-10">
+
         <!-- Heading -->
 
         <div class="mb-24 max-w-3xl">
@@ -524,10 +547,14 @@
             ABOUT VOLTPRO
           </span>
 
+          <!-- Sub Heading -->
+
           <h2 class="mt-6 text-5xl font-black leading-tight text-slate-900">
             Trusted Electrical
             <span class="text-amber-500"> Professionals </span>
           </h2>
+
+          <!-- Description -->
 
           <p class="mt-8 text-lg leading-8 text-slate-600">
             VoltPro delivers dependable residential and commercial electrical
@@ -541,6 +568,7 @@
         <!-- Content -->
 
         <div class="grid items-center gap-20 lg:grid-cols-2">
+          
           <!-- Image -->
 
           <div class="relative">
@@ -570,8 +598,9 @@
               Why Homeowners
               <span class="text-amber-500"> Choose Us </span>
             </h3>
-
             <div class="space-y-8">
+
+              <!-- Icon Licensed -->
               <div class="flex gap-6">
                 <div
                   class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-amber-100 text-3xl"
@@ -589,6 +618,7 @@
                 </div>
               </div>
 
+              <!-- Icon Fast -->
               <div class="flex gap-6">
                 <div
                   class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-amber-100 text-3xl"
@@ -606,6 +636,7 @@
                 </div>
               </div>
 
+              <!-- Icon Environment -->
               <div class="flex gap-6">
                 <div
                   class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-amber-100 text-3xl"
@@ -623,6 +654,7 @@
                 </div>
               </div>
 
+              <!-- Icon Customer Satisfaction -->
               <div class="flex gap-6">
                 <div
                   class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-amber-100 text-3xl"
@@ -643,25 +675,22 @@
             </div>
 
             <!-- Stats -->
-
+             
             <div
               class="mt-16 grid grid-cols-3 gap-6 rounded-3xl bg-slate-900 p-8 text-center"
             >
               <div>
                 <h4 class="text-4xl font-black text-amber-500">2,500+</h4>
-
                 <p class="mt-2 text-sm text-slate-400">Projects</p>
               </div>
 
               <div>
                 <h4 class="text-4xl font-black text-amber-500">20+</h4>
-
                 <p class="mt-2 text-sm text-slate-400">Years</p>
               </div>
 
               <div>
                 <h4 class="text-4xl font-black text-amber-500">24/7</h4>
-
                 <p class="mt-2 text-sm text-slate-400">Emergency</p>
               </div>
             </div>
@@ -676,6 +705,7 @@
 
     <section id="projects" class="reveal bg-slate-100 py-32">
       <div class="container">
+
         <!-- Heading -->
 
         <div class="mx-auto mb-20 max-w-3xl text-center">
@@ -685,10 +715,14 @@
             FEATURED PROJECTS
           </span>
 
+          <!-- Heading -->
+
           <h2 class="mt-6 text-5xl font-black text-slate-900">
             Quality Work You
             <span class="text-amber-500">Can Trust</span>
           </h2>
+
+          <!-- Description -->
 
           <p class="mt-6 text-lg leading-8 text-slate-600">
             From residential upgrades to commercial installations, every project
@@ -699,7 +733,8 @@
         <!-- Grid -->
 
         <div class="grid gap-8 lg:grid-cols-2">
-          <!-- Project -->
+
+          <!-- Project 1 -->
 
           <article class="group overflow-hidden rounded-3xl bg-white shadow-xl">
             <div class="overflow-hidden">
@@ -726,7 +761,7 @@
             </div>
           </article>
 
-          <!-- Project -->
+          <!-- Project 2 -->
 
           <article class="group overflow-hidden rounded-3xl bg-white shadow-xl">
             <div class="overflow-hidden">
@@ -753,7 +788,7 @@
             </div>
           </article>
 
-          <!-- Project -->
+          <!-- Project 3 -->
 
           <article class="group overflow-hidden rounded-3xl bg-white shadow-xl">
             <div class="overflow-hidden">
@@ -780,7 +815,7 @@
             </div>
           </article>
 
-          <!-- Project -->
+          <!-- Project 4 -->
 
           <article class="group overflow-hidden rounded-3xl bg-white shadow-xl">
             <div class="overflow-hidden">
@@ -822,6 +857,7 @@
 
     <section id="testimonials" class="reveal bg-white py-32">
       <div class="container">
+
         <!-- Heading -->
 
         <div class="mx-auto mb-20 max-w-3xl text-center">
@@ -831,22 +867,25 @@
             CLIENT TESTIMONIALS
           </span>
 
+          <!-- Title -->
+
           <h2 class="mt-6 text-5xl font-black text-slate-900">
             Trusted By
             <span class="text-amber-500">Homeowners & Businesses</span>
           </h2>
 
+          <!-- Description -->
           <p class="mt-6 text-lg leading-8 text-slate-600">
             We're proud of the relationships we've built and the quality
             workmanship that keeps customers coming back.
           </p>
 
+          <!-- Rating -->
           <div class="mt-10 flex items-center justify-center gap-4">
             <div class="text-3xl text-amber-500">★★★★★</div>
 
             <div class="text-left">
               <h3 class="font-bold text-xl">5.0 Average Rating</h3>
-
               <p class="text-slate-500">
                 Based on hundreds of satisfied customers
               </p>
@@ -857,6 +896,7 @@
         <!-- Layout -->
 
         <div class="grid gap-8 lg:grid-cols-3">
+
           <!-- Featured Review -->
 
           <article
@@ -879,7 +919,6 @@
 
               <div>
                 <h4 class="font-bold text-xl">John Smith</h4>
-
                 <p class="text-slate-400">Residential Customer</p>
               </div>
             </div>
@@ -942,7 +981,7 @@
           >
             FREQUENTLY ASKED QUESTIONS
           </span>
-
+          <!-- Title -->
           <h2 class="mt-6 text-5xl font-black">
             Answers To Common
             <span class="text-amber-500">Questions</span>
@@ -1007,15 +1046,13 @@
 
     <!-- ===========================
      CONTACT
-
-
-
 =========================== -->
 
     <section
       id="contact"
       class="reveal relative overflow-hidden bg-slate-950 py-32 text-white"
     >
+    <!-- Background Pattern -->
       <div
         class="absolute inset-0 opacity-5"
         style="
@@ -1028,40 +1065,58 @@
 
       <div class="container relative z-10">
         <div class="mx-auto mb-20 max-w-3xl text-center">
+
+          <!-- Badge -->
+
           <span
             class="inline-flex rounded-full border border-amber-500/30 bg-amber-500/10 px-4 py-2 text-sm font-semibold text-amber-400"
           >
             GET STARTED
           </span>
-
+          <!-- Title -->
           <h2 class="mt-6 text-5xl font-black">
             Ready To Power
             <span class="text-amber-500"> Your Next Project? </span>
           </h2>
-
+          <!-- Description -->
           <p class="mt-6 text-lg text-slate-300 leading-8">
             Contact our team today for a free estimate. We're here to answer
             your questions and help with your next electrical project.
           </p>
         </div>
 
-        <div class="grid gap-12 lg:grid-cols-2">
-          <!-- Contact Info -->
+        <!-- Contact Info-->
 
+        <div class="grid gap-12 lg:grid-cols-2">
           <div class="space-y-8">
             <div class="glass rounded-3xl p-8">
               <h3 class="text-2xl font-bold">Contact Information</h3>
 
               <div class="mt-8 space-y-6 text-slate-300">
-                <p><i class="fa-solid fa-phone text-amber-500"></i> (555) 123-4567</p>
+                <p>
+                  <i class="fa-solid fa-phone text-amber-500"></i> (555)
+                  123-4567
+                </p>
 
-                <p><i class="fa-solid fa-envelope text-blue-400"></i> hello@voltpro.com</p>
+                <p>
+                  <i class="fa-solid fa-envelope text-blue-400"></i>
+                  hello@voltpro.com
+                </p>
 
-                <p><i class="fa-solid fa-map-marker-alt text-red-600"></i> 123 Main Street, Your City</p>
+                <p>
+                  <i class="fa-solid fa-map-marker-alt text-red-600"></i> 123
+                  Main Street, Your City
+                </p>
 
-                <p><i class="fa-solid fa-clock text-amber-50"></i> Mon - Fri: 8:00 AM - 6:00 PM</p>
+                <p>
+                  <i class="fa-solid fa-clock text-amber-50"></i> Mon - Fri:
+                  8:00 AM - 6:00 PM
+                </p>
 
-                <p><i class="fa-solid fa-bolt text-amber-200"></i> 24/7 Emergency Service</p>
+                <p>
+                  <i class="fa-solid fa-bolt text-amber-200"></i> 24/7 Emergency
+                  Service
+                </p>
               </div>
             </div>
           </div>
@@ -1145,6 +1200,8 @@
             <ul class="space-y-3">
               <li>(555) 123-4567</li>
               <li>hello@voltpro.com</li>
+
+              
               <li>Your City</li>
             </ul>
           </div>
