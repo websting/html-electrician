@@ -1,4 +1,4 @@
-import './style.css'
+import "./style.css";
 
 const navbar = document.querySelector("#navbar");
 
@@ -6,153 +6,105 @@ const menuBtn = document.querySelector("#menuBtn");
 
 const mobileMenu = document.querySelector("#mobileMenu");
 
-
-
+// Navbar scroll effect
 window.addEventListener("scroll", () => {
+  if (window.scrollY > 80) {
+    navbar.classList.add(
+      "bg-white",
 
-    if (window.scrollY > 80) {
+      "shadow-xl",
 
-        navbar.classList.add(
+      "backdrop-blur",
 
-            "bg-white",
+      "border-b",
 
-            "shadow-xl",
+      "border-slate-200",
 
-            "backdrop-blur",
+      "scrolled",
+    );
+  } else {
+    navbar.classList.remove(
+      "bg-white",
 
-            "border-b",
+      "shadow-xl",
 
-            "border-slate-200",
+      "backdrop-blur",
 
-            "scrolled",
+      "border-b",
 
-        );
+      "border-slate-200",
 
-    } else {
-
-        navbar.classList.remove(
-
-            "bg-white",
-
-            "shadow-xl",
-
-            "backdrop-blur",
-
-            "border-b",
-
-            "border-slate-200",
-
-            "scrolled",
-
-
-        );
-
-    }
-
+      "scrolled",
+    );
+  }
 });
 
-
-
+// mobile menu
 menuBtn.addEventListener("click", () => {
-
-    mobileMenu.classList.toggle("hidden");
-
+  mobileMenu.classList.toggle("hidden");
 });
 
-
-
-mobileMenu.querySelectorAll("a").forEach(link => {
-
-    link.addEventListener("click", () => {
-
-        mobileMenu.classList.add("hidden");
-
-    });
-
+mobileMenu.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden");
+  });
 });
-
 
 // reveal
 
 const reveals = document.querySelectorAll(".reveal");
 
 const revealObserver = new IntersectionObserver(
-(entries)=>{
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      }
+    });
+  },
+  {
+    threshold: 0.15,
+  },
+);
 
-entries.forEach(entry=>{
-
-if(entry.isIntersecting){
-
-entry.target.classList.add("active");
-
-}
-
-});
-
-},{
-threshold:.15
-});
-
-reveals.forEach(section=>{
-
-revealObserver.observe(section);
-
+reveals.forEach((section) => {
+  revealObserver.observe(section);
 });
 
 // counter
 const counters = document.querySelectorAll(".counter");
 
-const counterObserver = new IntersectionObserver((entries)=>{
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
 
-entries.forEach(entry=>{
+    const counter = entry.target;
 
-if(!entry.isIntersecting) return;
+    const target = +counter.dataset.target;
 
-const counter = entry.target;
+    let current = 0;
 
-const target = +counter.dataset.target;
+    const step = target / 80;
 
-let current = 0;
+    const update = () => {
+      current += step;
 
-const step = target / 80;
+      if (current < target) {
+        counter.textContent = Math.floor(current);
 
-const update = ()=>{
+        requestAnimationFrame(update);
+      } else {
+        counter.textContent = target.toLocaleString() + "+";
+      }
+    };
 
-current += step;
+    update();
 
-if(current < target){
-
-counter.textContent = Math.floor(current);
-
-requestAnimationFrame(update);
-
-}else{
-
-counter.textContent = target.toLocaleString()+"+";
-
-}
-
-};
-
-update();
-
-counterObserver.unobserve(counter);
-
+    counterObserver.unobserve(counter);
+  });
 });
 
+counters.forEach((counter) => {
+  counterObserver.observe(counter);
 });
-
-counters.forEach(counter=>{
-
-counterObserver.observe(counter);
-
-});
-
-// scroll
-
-
-
-
-
-
 
