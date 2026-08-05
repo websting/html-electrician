@@ -167,7 +167,7 @@ Purchasing this template grants you a license to use it under the terms outlined
 
 Redistribution, resale, or sharing of the source files is strictly prohibited.
 
-© 2026 Your Name or Company. All Rights Reserved.
+© 2026 simpleDesigns. All Rights Reserved.
 
 ---
 
