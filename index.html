@@ -13,7 +13,7 @@
       referrerpolicy="no-referrer"
     />
 
-    <title>VoltPro Electrical | Premium Electrician Template</title>
+    <title>VoltPro Electrical | Licensed Electricians in Milton &amp; The GTA</title>
 
     <script type="module" src="/src/main.js"></script>
   </head>
@@ -31,8 +31,7 @@
         <nav class="flex h-20 items-center justify-between">
           <!-- Logo -->
           <a href="#hero" class="text-3xl font-black tracking-tight">
-            <span class="logo-primary"> Volt </span>
-            <span class="text-amber-500"> Pro </span>
+            <span class="logo-primary">Volt</span><span class="text-amber-500">Pro</span>
           </a>
 
           <!-- =============================
@@ -72,13 +71,11 @@
                 >Testimonials</a
               >
             </li>
-
             <li>
               <a class="nav-link hover:text-amber-400 transition" href="#faq"
                 >FAQ</a
               >
             </li>
-
             <li>
               <a
                 class="nav-link hover:text-amber-400 transition"
@@ -93,8 +90,7 @@
           </a>
 
           <!-- Mobile Menu Button -->
-
-          <button id="menuBtn" class="menu-btn lg:hidden">☰</button>
+          <button id="menuBtn" aria-label="Toggle navigation menu" class="menu-btn lg:hidden">☰</button>
         </nav>
       </div>
     </header>
@@ -102,37 +98,29 @@
     <!-- ===========================
          MOBILE MENU
     ============================ -->
-
     <div
       id="mobileMenu"
-      class="fixed inset-0 z-40  bg-slate-950/90 backdrop-blur-sm hidden"
+      class="fixed inset-0 z-40 bg-slate-950/90 backdrop-blur-sm hidden"
     >
       <div
-        class="flex h-full flex-col items-center justify-center gap-10 text-slate-300"
+        class="flex h-full flex-col items-center justify-center gap-8 text-slate-300"
       >
-        <a href="#hero" class="text-4xl">Home</a>
-
-        <a href="#services" class="text-4xl">Services</a>
-
-        <a href="#about" class="text-4xl">About</a>
-
-        <a href="#projects" class="text-4xl">Projects</a>
-
-        <a href="#testimonials" class="text-4xl">Testimonials</a>
-
-        <a href="#faq" class="text-4xl">FAQ</a>
-
-        <a href="#contact" class="text-4xl">Contact</a>
+        <a href="#hero" class="text-3xl sm:text-4xl hover:text-amber-400 transition">Home</a>
+        <a href="#services" class="text-3xl sm:text-4xl hover:text-amber-400 transition">Services</a>
+        <a href="#about" class="text-3xl sm:text-4xl hover:text-amber-400 transition">About</a>
+        <a href="#projects" class="text-3xl sm:text-4xl hover:text-amber-400 transition">Projects</a>
+        <a href="#testimonials" class="text-3xl sm:text-4xl hover:text-amber-400 transition">Testimonials</a>
+        <a href="#faq" class="text-3xl sm:text-4xl hover:text-amber-400 transition">FAQ</a>
+        <a href="#contact" class="text-3xl sm:text-4xl hover:text-amber-400 transition">Contact</a>
       </div>
     </div>
 
-    <!-- ===========================
+        <!-- ===========================
          HERO
     ============================ -->
-
     <section
       id="hero"
-      class="relative flex min-h-screen items-center overflow-hidden bg-slate-950 pt-20 py-32"
+      class="relative flex min-h-[85vh] items-center overflow-hidden bg-slate-950 pt-24 pb-24"
     >
 
       <!-- Background Grid -->
@@ -147,52 +135,46 @@
       ></div>
 
       <!-- Background Glow -->
-
       <div
-        class="absolute -right-40 top-24 h-162.5 w-162.5 rounded-full bg-amber-500/20 blur-3xl"
+        class="absolute -right-40 top-24 h-120 w-120 rounded-full bg-amber-500/20 blur-3xl"
       ></div>
 
       <div
-        class="absolute -left-32 bottom-0 h-100 w-100 rounded-full bg-sky-500/10 blur-3xl"
+        class="absolute -left-32 bottom-0 h-80 w-80 rounded-full bg-sky-500/10 blur-3xl"
       ></div>
 
       <div
-        class="container relative z-10 grid items-center gap-16 lg:grid-cols-2"
+        class="container relative z-10 grid items-center gap-10 lg:grid-cols-2"
       >
         <!-- LEFT -->
-
         <div>
 
           <!-- Badge -->
-
           <span
-            class="mb-6 inline-flex rounded-full border border-amber-500/30 bg-amber-500/10 px-4 py-2 text-sm font-semibold text-amber-400"
+            class="mb-4 inline-flex rounded-full border border-amber-500/30 bg-amber-500/10 px-3.5 py-1.5 text-xs font-semibold tracking-wide text-amber-400"
           >
             ON TIME • FULLY INSURED • 24/7 EMERGENCY SERVICE
           </span>
 
           <!-- Divider -->
+          <div class="mb-5 h-1 w-16 rounded-full bg-amber-500"></div>
 
-          <div class="mb-8 h-1 w-24 rounded-full bg-amber-500"></div>
-
-          <!--Title -->
-
+          <!-- Title -->
           <h1
-            class="mb-8 text-5xl font-black leading-tight text-white md:text-7xl"
-          >Licensed<span class="text-amber-500"> Electricians </span>
-            <span class="text-slate-300"> Serving Milton & The GTA </span>
+            class="mb-5 text-3xl sm:text-4xl lg:text-5xl font-black leading-tight text-white"
+          >
+            Licensed <span class="text-amber-500">Electricians</span>
+            <span class="block text-slate-300 mt-1">Serving Milton &amp; The GTA</span>
           </h1>
 
           <!-- Subtitle -->
-
-          <p class="mb-10 max-w-xl text-lg leading-8 text-slate-300">
-            Electrical services, including panel upgrades, EV charger installation, lighting installation, troubleshooting, and 24/7 emergency electrical repairs. Safe, reliable workmanship for residential and comercial businesses.
+          <p class="mb-7 max-w-lg text-base leading-relaxed text-slate-300">
+            Panel upgrades, EV charger installation, lighting, troubleshooting, and 24/7 emergency repairs—safe, code-compliant workmanship for homes and commercial businesses.
           </p>
 
           <!-- CTA Buttons -->
-
-          <div class="flex flex-wrap gap-5">
-            <a href="#contact" class="btn btn-primary"> Request Free Estimate </a>
+          <div class="flex flex-wrap gap-4">
+            <a href="#contact" class="btn btn-primary">Request Free Estimate</a>
 
             <a
               href="#services"
@@ -203,327 +185,289 @@
           </div>
 
           <!-- Stats -->
-
-          <div class="mt-16 grid grid-cols-3 gap-8">
-            <!-- <h2
-              class="counter text-4xl font-black text-amber-500"
-              data-target="20"
-            >
-              0
-            </h2> -->
+          <div class="mt-10 pt-6 border-t border-white/10 grid grid-cols-3 gap-4 sm:gap-6 max-w-md">
             <div>
               <h2
-                class="counter text-4xl font-black text-amber-500"
+                class="counter text-2xl sm:text-3xl font-black text-amber-500"
                 data-target="20"
               >
                 0
               </h2>
-              <p class="mt-2 text-slate-400">Years of Experience</p>
+              <p class="mt-1 text-xs sm:text-sm text-slate-400">Years Experience</p>
             </div>
 
             <div>
               <h2
-                class="counter text-4xl font-black text-amber-500"
+                class="counter text-2xl sm:text-3xl font-black text-amber-500"
                 data-target="2500"
               >
                 0
               </h2>
-              <p class="mt-2 text-slate-400">Projects Completed</p>
+              <p class="mt-1 text-xs sm:text-sm text-slate-400">Projects Done</p>
             </div>
 
             <div>
-              <h2 class="text-4xl font-black text-amber-500">★★★★★</h2>
-
-              <p class="mt-2 text-slate-400">Customer Reviews</p>
+              <h2 class="text-2xl sm:text-3xl font-black text-amber-500">★★★★★</h2>
+              <p class="mt-1 text-xs sm:text-sm text-slate-400">5-Star Reviews</p>
             </div>
           </div>
         </div>
 
         <!-- RIGHT -->
-
         <div class="relative">
           <!-- Background Glow -->
           <div
-            class="absolute inset-0 scale-110 rounded-full bg-amber-500/20 blur-[100px]"
-          ></div>
-
-          <div
-            class="absolute left-1/2 top-1/2 h-130 w-130 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/10"
-          ></div>
-
-          <div
-            class="absolute left-1/2 top-1/2 h-162.5 w-162.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/5"
+            class="absolute inset-0 scale-105 rounded-full bg-amber-500/15 blur-[80px]"
           ></div>
 
           <!-- Image -->
           <img
             src="/images/hero/electrician.jpg"
             alt="Licensed residential electrician installing electrical wiring in a modern home"
-
-            class="relative z-20 mx-auto w-full max-w-2xl object-contain rounded-2xl"
+            class="relative z-20 mx-auto w-full max-w-lg object-cover rounded-2xl shadow-2xl"
           />
 
           <!-- Floating Card -->
-
-          <div class="glass absolute left-10 top-24 z-30 rounded-2xl p-5">
-            <p class="text-sm text-slate-300">Response Time</p>
-            <h3 class="text-2xl font-bold text-white">&lt; 60 Minutes</h3>
+          <div class="glass absolute left-3 top-4 sm:left-6 sm:top-6 z-30 rounded-xl px-4 py-3">
+            <p class="text-xs text-slate-300">Response Time</p>
+            <h3 class="text-base sm:text-lg font-bold text-white">&lt; 60 Minutes</h3>
           </div>
 
           <!-- Floating Card -->
-
-          <div class="glass absolute right-10 bottom-24 z-30 rounded-2xl p-5">
-            <p class="text-sm text-slate-300">Customer Satisfaction</p>
-            <h3 class="text-2xl font-bold text-white">100%</h3>
+          <div class="glass absolute right-3 bottom-4 sm:right-6 sm:bottom-6 z-30 rounded-xl px-4 py-3">
+            <p class="text-xs text-slate-300">Customer Satisfaction</p>
+            <h3 class="text-base sm:text-lg font-bold text-white">100%</h3>
           </div>
         </div>
       </div>
 
       <!-- Scroll Indicator -->
-
       <a
         href="#trust"
-        class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce"
+        aria-label="Scroll down to highlights"
+        class="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce hidden sm:flex"
       >
         <div
-          class="flex h-12 w-7 justify-center rounded-full border-2 border-slate-500"
+          class="flex h-10 w-6 justify-center rounded-full border-2 border-slate-500"
         >
-          <div class="mt-2 h-3 w-1 rounded-full bg-amber-500"></div>
+          <div class="mt-2 h-2.5 w-1 rounded-full bg-amber-500"></div>
         </div>
       </a>
     </section>
 
     <!-- ===========================
         TRUST BAR
-=========================== -->
-
-    <section id="trust" class="relative -mt-16 z-30 pb-24">
+    ============================ -->
+    <section id="trust" class="relative -mt-12 z-30 pb-16">
       <div class="container">
-        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
 
           <!-- Card #1 -->
-
           <div
-            class="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+            class="rounded-2xl border border-slate-200 bg-white p-6 shadow-lg transition duration-300 hover:-translate-y-1.5 hover:shadow-xl"
           >
             <div
-              class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-amber-100"
+              class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-amber-100"
             >
-              <i class="fa-solid fa-house-crack text-grey-500"></i>
+              <i class="fa-solid fa-shield-halved text-lg text-amber-600"></i>
             </div>
 
-            <h3 class="mb-3 text-xl font-bold">Licensed & Insured</h3>
+            <h3 class="mb-2 text-lg font-bold">Licensed &amp; Insured</h3>
 
-            <p class="text-slate-600 leading-7">
-              Certified electricians delivering safe, code-compliant electrical
-              installations.
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Certified electricians delivering safe, code-compliant electrical installations.
             </p>
           </div>
 
           <!-- Card #2 -->
-
           <div
-            class="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+            class="rounded-2xl border border-slate-200 bg-white p-6 shadow-lg transition duration-300 hover:-translate-y-1.5 hover:shadow-xl"
           >
             <div
-              class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-amber-100"
+              class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-amber-100"
             >
-              <i class="fa-solid fa-truck-fast text-red-500"></i>
+              <i class="fa-solid fa-truck-fast text-lg text-red-500"></i>
             </div>
 
-            <h3 class="mb-3 text-xl font-bold">Fast Response</h3>
+            <h3 class="mb-2 text-lg font-bold">Fast Response</h3>
 
-            <p class="text-slate-600 leading-7">
-              Same-day appointments and rapid emergency electrical service when
-              you need it most.
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Same-day appointments and rapid emergency electrical service when you need it most.
             </p>
           </div>
 
           <!-- Card #3 -->
-
           <div
-            class="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+            class="rounded-2xl border border-slate-200 bg-white p-6 shadow-lg transition duration-300 hover:-translate-y-1.5 hover:shadow-xl"
           >
             <div
-              class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-amber-100"
+              class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-amber-100"
             >
-              <i class="fa-solid fa-plug-circle-bolt text-amber-700"></i>
+              <i class="fa-solid fa-plug-circle-bolt text-lg text-amber-700"></i>
             </div>
 
-            <h3 class="mb-3 text-xl font-bold">Modern Solutions</h3>
+            <h3 class="mb-2 text-lg font-bold">Modern Solutions</h3>
 
-            <p class="text-slate-600 leading-7">
-              Smart home wiring, EV chargers, lighting upgrades and
-              energy-efficient solutions.
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Smart home wiring, EV chargers, lighting upgrades and energy-efficient solutions.
             </p>
           </div>
 
           <!-- Card #4 -->
-
           <div
-            class="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+            class="rounded-2xl border border-slate-200 bg-white p-6 shadow-lg transition duration-300 hover:-translate-y-1.5 hover:shadow-xl"
           >
             <div
-              class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-amber-100"
+              class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-amber-100"
             >
-              <i class="fa-solid fa-star text-amber-500"></i>
+              <i class="fa-solid fa-star text-lg text-amber-500"></i>
             </div>
 
-            <h3 class="mb-3 text-xl font-bold">5-Star Service</h3>
+            <h3 class="mb-2 text-lg font-bold">5-Star Service</h3>
 
-            <p class="text-slate-600 leading-7">
-              Hundreds of satisfied homeowners trust our workmanship,
-              communication and reliability.
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Hundreds of satisfied homeowners trust our workmanship, communication and reliability.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===========================
-          SERVICES
-=========================== -->
 
-    <section id="services" class="reveal py-32 bg-slate-50">
+
+        <!-- ===========================
+          SERVICES
+    =========================== -->
+    <section id="services" class="reveal py-20 bg-slate-50">
       <div class="container">
 
         <!-- Heading -->
-
-        <div class="max-w-3xl mx-auto text-center mb-20">
+        <div class="max-w-2xl mx-auto text-center mb-12">
           <span
-            class="inline-flex rounded-full bg-amber-100 px-4 py-2 text-sm font-semibold text-amber-600"
+            class="inline-flex rounded-full bg-amber-100 px-3.5 py-1 text-xs font-semibold tracking-wide text-amber-600"
           >
             OUR SERVICES
           </span>
 
           <!-- Title -->
-
-          <h2 class="mt-6 text-5xl font-black text-slate-900">
+          <h2 class="mt-4 text-3xl sm:text-4xl font-black text-slate-900">
             Complete Electrical
             <span class="text-amber-500">Solutions</span>
           </h2>
 
           <!-- Description -->
-
-          <p class="mt-6 text-lg text-slate-600 leading-8">
+          <p class="mt-4 text-base text-slate-600 leading-relaxed">
             Residential, commercial and emergency electrical work completed
             safely, efficiently and to the highest industry standards.
           </p>
         </div>
 
         <!-- Services Grid -->
-
-        <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
 
           <!-- Card #1 -->
-
           <div
-            class="group rounded-3xl bg-white p-10 shadow-lg transition duration-500 hover:-translate-y-3 hover:shadow-2xl"
+            class="group rounded-2xl border border-slate-200/80 bg-white p-6 sm:p-7 shadow-md transition duration-300 hover:-translate-y-1.5 hover:shadow-xl"
           >
             <div
-              class="mb-8 flex h-20 w-20 items-center justify-center rounded-3xl bg-amber-100 text-4xl transition group-hover:rotate-6 group-hover:scale-110"
+              class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-100 text-2xl text-amber-700 transition group-hover:rotate-6 group-hover:scale-105"
             >
               <i class="fa-solid fa-house"></i>
             </div>
 
-            <h3 class="text-2xl font-bold mb-4">Residential Wiring</h3>
+            <h3 class="text-xl font-bold mb-2 text-slate-900">Residential Wiring</h3>
 
-            <p class="leading-8 text-slate-600">
+            <p class="text-sm leading-relaxed text-slate-600">
               New construction, renovations, panel upgrades, lighting, outlets
               and complete home electrical installations.
             </p>
           </div>
 
           <!-- Card #2 -->
-
           <div
-            class="group rounded-3xl bg-white p-10 shadow-lg transition duration-500 hover:-translate-y-3 hover:shadow-2xl"
+            class="group rounded-2xl border border-slate-200/80 bg-white p-6 sm:p-7 shadow-md transition duration-300 hover:-translate-y-1.5 hover:shadow-xl"
           >
             <div
-              class="mb-8 flex h-20 w-20 items-center justify-center rounded-3xl bg-sky-100 text-4xl transition group-hover:rotate-6 group-hover:scale-110"
+              class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-sky-100 text-2xl text-sky-700 transition group-hover:rotate-6 group-hover:scale-105"
             >
               <i class="fa-solid fa-building"></i>
             </div>
 
-            <h3 class="text-2xl font-bold mb-4">Commercial</h3>
+            <h3 class="text-xl font-bold mb-2 text-slate-900">Commercial</h3>
 
-            <p class="leading-8 text-slate-600">
+            <p class="text-sm leading-relaxed text-slate-600">
               Offices, retail spaces, restaurants, warehouses and commercial
               maintenance programs.
             </p>
           </div>
 
           <!-- Card #3 -->
-
           <div
-            class="group rounded-3xl bg-white p-10 shadow-lg transition duration-500 hover:-translate-y-3 hover:shadow-2xl"
+            class="group rounded-2xl border border-slate-200/80 bg-white p-6 sm:p-7 shadow-md transition duration-300 hover:-translate-y-1.5 hover:shadow-xl"
           >
             <div
-              class="mb-8 flex h-20 w-20 items-center justify-center rounded-3xl bg-green-100 text-4xl transition group-hover:rotate-6 group-hover:scale-110"
+              class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-green-100 text-2xl text-green-700 transition group-hover:rotate-6 group-hover:scale-105"
             >
               <i class="fa-solid fa-charging-station"></i>
             </div>
 
-            <h3 class="text-2xl font-bold mb-4">EV Chargers</h3>
+            <h3 class="text-xl font-bold mb-2 text-slate-900">EV Chargers</h3>
 
-            <p class="leading-8 text-slate-600">
+            <p class="text-sm leading-relaxed text-slate-600">
               Professional Level 2 EV charger installation for homes and
               commercial parking facilities.
             </p>
           </div>
 
           <!-- Card #4 -->
-
           <div
-            class="group rounded-3xl bg-white p-10 shadow-lg transition duration-500 hover:-translate-y-3 hover:shadow-2xl"
+            class="group rounded-2xl border border-slate-200/80 bg-white p-6 sm:p-7 shadow-md transition duration-300 hover:-translate-y-1.5 hover:shadow-xl"
           >
             <div
-              class="mb-8 flex h-20 w-20 items-center justify-center rounded-3xl bg-purple-100 text-4xl transition group-hover:rotate-6 group-hover:scale-110"
+              class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-purple-100 text-2xl text-purple-700 transition group-hover:rotate-6 group-hover:scale-105"
             >
               <i class="fa-solid fa-lightbulb"></i>
             </div>
 
-            <h3 class="text-2xl font-bold mb-4">Lighting Design</h3>
+            <h3 class="text-xl font-bold mb-2 text-slate-900">Lighting Design</h3>
 
-            <p class="leading-8 text-slate-600">
+            <p class="text-sm leading-relaxed text-slate-600">
               Interior, exterior and landscape lighting with modern LED
               efficiency.
             </p>
           </div>
 
           <!-- Card #5 -->
-
           <div
-            class="group rounded-3xl bg-white p-10 shadow-lg transition duration-500 hover:-translate-y-3 hover:shadow-2xl"
+            class="group rounded-2xl border border-slate-200/80 bg-white p-6 sm:p-7 shadow-md transition duration-300 hover:-translate-y-1.5 hover:shadow-xl"
           >
             <div
-              class="mb-8 flex h-20 w-20 items-center justify-center rounded-3xl bg-red-100 text-4xl transition group-hover:rotate-6 group-hover:scale-110"
+              class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-red-100 text-2xl text-red-600 transition group-hover:rotate-6 group-hover:scale-105"
             >
               <i class="fa-solid fa-truck-medical"></i>
             </div>
 
-            <h3 class="text-2xl font-bold mb-4">Emergency Service</h3>
+            <h3 class="text-xl font-bold mb-2 text-slate-900">Emergency Service</h3>
 
-            <p class="leading-8 text-slate-600">
+            <p class="text-sm leading-relaxed text-slate-600">
               Fast troubleshooting and emergency repairs available when
               unexpected problems happen.
             </p>
           </div>
 
           <!-- Card #6 -->
-
           <div
-            class="group rounded-3xl bg-white p-10 shadow-lg transition duration-500 hover:-translate-y-3 hover:shadow-2xl"
+            class="group rounded-2xl border border-slate-200/80 bg-white p-6 sm:p-7 shadow-md transition duration-300 hover:-translate-y-1.5 hover:shadow-xl"
           >
             <div
-              class="mb-8 flex h-20 w-20 items-center justify-center rounded-3xl bg-orange-100 text-4xl transition group-hover:rotate-6 group-hover:scale-110"
+              class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-100 text-2xl text-orange-600 transition group-hover:rotate-6 group-hover:scale-105"
             >
               <i class="fa-solid fa-wrench"></i>
             </div>
 
-            <h3 class="text-2xl font-bold mb-4">Panel Upgrades</h3>
+            <h3 class="text-xl font-bold mb-2 text-slate-900">Panel Upgrades</h3>
 
-            <p class="leading-8 text-slate-600">
+            <p class="text-sm leading-relaxed text-slate-600">
               Safe electrical panel replacements, breaker upgrades and service
               capacity improvements.
             </p>
@@ -532,43 +476,39 @@
       </div>
     </section>
 
-    <!-- ===========================
-      ABOUT + WHY CHOOSE US
-=========================== -->
 
-    <section id="about" class="reveal relative overflow-hidden bg-white py-32">
+        <!-- ===========================
+          ABOUT + WHY CHOOSE US
+    =========================== -->
+    <section id="about" class="reveal relative overflow-hidden bg-white py-20">
 
       <!-- Background Glow -->
-
       <div
-        class="absolute -left-40 top-20 h-125 w-125 rounded-full bg-amber-100/40 blur-3xl"
+        class="absolute -left-40 top-20 h-96 w-96 rounded-full bg-amber-100/40 blur-3xl"
       ></div>
 
       <div
-        class="absolute right-0 bottom-0 h-105 w-105 rounded-full bg-sky-100/40 blur-3xl"
+        class="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-sky-100/40 blur-3xl"
       ></div>
 
       <div class="container relative z-10">
 
         <!-- Heading -->
-
-        <div class="mb-24 max-w-3xl">
+        <div class="mb-12 max-w-2xl">
           <span
-            class="inline-flex rounded-full bg-amber-100 px-4 py-2 text-sm font-semibold text-amber-600"
+            class="inline-flex rounded-full bg-amber-100 px-3.5 py-1 text-xs font-semibold tracking-wide text-amber-600"
           >
             ABOUT VOLTPRO
           </span>
 
           <!-- Sub Heading -->
-
-          <h2 class="mt-6 text-5xl font-black leading-tight text-slate-900">
+          <h2 class="mt-4 text-3xl sm:text-4xl font-black leading-tight text-slate-900">
             Trusted Electrical
-            <span class="text-amber-500"> Professionals </span>
+            <span class="text-amber-500">Professionals</span>
           </h2>
 
           <!-- Description -->
-
-          <p class="mt-8 text-lg leading-8 text-slate-600">
+          <p class="mt-4 text-base leading-relaxed text-slate-600">
             VoltPro delivers dependable residential and commercial electrical
             services with a focus on safety, craftsmanship and exceptional
             customer service. From small repairs to complete electrical
@@ -578,54 +518,48 @@
         </div>
 
         <!-- Content -->
-
-        <div class="grid items-center gap-20 lg:grid-cols-2">
+        <div class="grid items-center gap-12 lg:grid-cols-2">
           
           <!-- Image -->
-
           <div class="relative">
             <img
               src="/images/about/3electricians.jpg"
               alt="Electrician at work"
-              class="rounded-3xl shadow-2xl"
+              class="w-full rounded-2xl shadow-xl object-cover"
             />
 
             <!-- Floating Card -->
-
-            <div class="glass absolute -bottom-10 -right-10 rounded-3xl p-8">
-              <p class="text-xs uppercase tracking-[0.3em] text-slate-300">
+            <div class="glass absolute bottom-4 right-4 sm:-bottom-5 sm:-right-5 rounded-2xl px-5 py-4 shadow-xl">
+              <p class="text-[11px] uppercase tracking-widest text-slate-300">
                 EXPERIENCE
               </p>
 
-              <h3 class="mt-2 text-5xl font-black text-white">20+</h3>
+              <h3 class="mt-1 text-3xl font-black text-white">20+</h3>
 
-              <p class="mt-2 text-slate-300">Years in Business</p>
+              <p class="mt-0.5 text-xs text-slate-300">Years in Business</p>
             </div>
           </div>
 
           <!-- Why Choose Us -->
-
           <div>
-            <h3 class="mb-10 text-4xl font-black text-slate-900">
-              Why Volt
-              <span class="text-amber-500">Pro </span>
+            <h3 class="mb-6 text-2xl sm:text-3xl font-black text-slate-900">
+              Why Volt<span class="text-amber-500">Pro</span>
             </h3>
-            <div class="space-y-8">
+
+            <div class="space-y-5">
 
               <!-- Icon Licensed -->
-              <div class="flex gap-
-              
-              6">
+              <div class="flex gap-4">
                 <div
-                  class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-amber-100 text-3xl"
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-amber-100 text-xl"
                 >
                   <i class="fa-solid fa-id-card text-blue-600"></i>
                 </div>
 
                 <div>
-                  <h4 class="text-xl font-bold">Licensed & Fully Insured</h4>
+                  <h4 class="text-lg font-bold text-slate-900">Licensed &amp; Fully Insured</h4>
 
-                  <p class="mt-2 leading-7 text-slate-600">
+                  <p class="mt-1 text-sm leading-relaxed text-slate-600">
                     Every project is completed safely, professionally and to
                     current electrical code standards.
                   </p>
@@ -633,17 +567,17 @@
               </div>
 
               <!-- Icon Fast -->
-              <div class="flex gap-6">
+              <div class="flex gap-4">
                 <div
-                  class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-amber-100 text-3xl"
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-amber-100 text-xl"
                 >
                   <i class="fa-solid fa-truck-fast text-red-500"></i>
                 </div>
 
                 <div>
-                  <h4 class="text-xl font-bold">Fast & Reliable Service</h4>
+                  <h4 class="text-lg font-bold text-slate-900">Fast &amp; Reliable Service</h4>
 
-                  <p class="mt-2 leading-7 text-slate-600">
+                  <p class="mt-1 text-sm leading-relaxed text-slate-600">
                     Prompt arrivals, clear communication and dependable
                     workmanship from start to finish.
                   </p>
@@ -651,17 +585,17 @@
               </div>
 
               <!-- Icon Environment -->
-              <div class="flex gap-6">
+              <div class="flex gap-4">
                 <div
-                  class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-amber-100 text-3xl"
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-amber-100 text-xl"
                 >
                   <i class="fa-solid fa-leaf text-green-500"></i>
                 </div>
 
                 <div>
-                  <h4 class="text-xl font-bold">Modern Electrical Solutions</h4>
+                  <h4 class="text-lg font-bold text-slate-900">Modern Electrical Solutions</h4>
 
-                  <p class="mt-2 leading-7 text-slate-600">
+                  <p class="mt-1 text-sm leading-relaxed text-slate-600">
                     From smart home upgrades and EV chargers to energy-efficient
                     lighting, we help future-proof your property.
                   </p>
@@ -669,17 +603,17 @@
               </div>
 
               <!-- Icon Customer Satisfaction -->
-              <div class="flex gap-6">
+              <div class="flex gap-4">
                 <div
-                  class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-amber-100 text-3xl"
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-amber-100 text-xl"
                 >
                   <i class="fa-solid fa-star text-amber-500"></i>
                 </div>
 
                 <div>
-                  <h4 class="text-xl font-bold">Customer Satisfaction</h4>
+                  <h4 class="text-lg font-bold text-slate-900">Customer Satisfaction</h4>
 
-                  <p class="mt-2 leading-7 text-slate-600">
+                  <p class="mt-1 text-sm leading-relaxed text-slate-600">
                     Honest recommendations, transparent pricing and quality
                     workmanship have earned the trust of hundreds of satisfied
                     customers.
@@ -689,23 +623,22 @@
             </div>
 
             <!-- Stats -->
-             
             <div
-              class="mt-16 grid grid-cols-3 gap-6 rounded-3xl bg-slate-900 p-8 text-center"
+              class="mt-8 grid grid-cols-3 gap-4 rounded-2xl bg-slate-900 p-5 sm:p-6 text-center"
             >
               <div>
-                <h4 class="text-4xl font-black text-amber-500">2,500+</h4>
-                <p class="mt-2 text-sm text-slate-400">Projects</p>
+                <h4 class="text-2xl sm:text-3xl font-black text-amber-500">2,500+</h4>
+                <p class="mt-1 text-xs sm:text-sm text-slate-400">Projects</p>
               </div>
 
               <div>
-                <h4 class="text-4xl font-black text-amber-500">20+</h4>
-                <p class="mt-2 text-sm text-slate-400">Years</p>
+                <h4 class="text-2xl sm:text-3xl font-black text-amber-500">20+</h4>
+                <p class="mt-1 text-xs sm:text-sm text-slate-400">Years</p>
               </div>
 
               <div>
-                <h4 class="text-4xl font-black text-amber-500">24/7</h4>
-                <p class="mt-2 text-sm text-slate-400">Emergency</p>
+                <h4 class="text-2xl sm:text-3xl font-black text-amber-500">24/7</h4>
+                <p class="mt-1 text-xs sm:text-sm text-slate-400">Emergency</p>
               </div>
             </div>
           </div>
@@ -713,62 +646,57 @@
       </div>
     </section>
 
-    <!-- ===========================
-     FEATURED PROJECTS
-=========================== -->
 
-    <section id="projects" class="reveal bg-slate-100 py-32">
+        <!-- ===========================
+         FEATURED PROJECTS
+    =========================== -->
+    <section id="projects" class="reveal bg-slate-100 py-20">
       <div class="container">
 
         <!-- Heading -->
-
-        <div class="mx-auto mb-20 max-w-3xl text-center">
+        <div class="mx-auto mb-12 max-w-2xl text-center">
           <span
-            class="inline-flex rounded-full bg-amber-100 px-4 py-2 text-sm font-semibold text-amber-600"
+            class="inline-flex rounded-full bg-amber-100 px-3.5 py-1 text-xs font-semibold tracking-wide text-amber-600"
           >
             FEATURED PROJECTS
           </span>
 
-          <!-- Heading -->
-
-          <h2 class="mt-6 text-5xl font-black text-slate-900">
+          <!-- Title -->
+          <h2 class="mt-4 text-3xl sm:text-4xl font-black text-slate-900">
             Quality Work You
             <span class="text-amber-500">Can Trust</span>
           </h2>
 
           <!-- Description -->
-
-          <p class="mt-6 text-lg leading-8 text-slate-600">
+          <p class="mt-4 text-base leading-relaxed text-slate-600">
             From residential upgrades to commercial installations, every project
             is completed with precision, safety and attention to detail.
           </p>
         </div>
 
         <!-- Grid -->
-
-        <div class="grid gap-8 lg:grid-cols-2">
+        <div class="grid gap-6 md:grid-cols-2">
 
           <!-- Project 1 -->
-
-          <article class="group overflow-hidden rounded-3xl bg-white shadow-xl">
+          <article class="group overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-md transition hover:shadow-xl">
             <div class="overflow-hidden">
               <img
                 src="/images/projects/interior-light.jpg"
-                alt=""
-                class="h-80 w-full object-cover transition duration-700 group-hover:scale-110 filter:saturate(1.15);"
+                alt="Modern residential interior recessed lighting and rewire"
+                class="h-56 sm:h-64 w-full object-cover saturate-[1.15] transition duration-500 group-hover:scale-105"
               />
             </div>
 
-            <div class="p-8">
+            <div class="p-6">
               <span
-                class="text-sm font-semibold uppercase tracking-widest text-amber-500"
+                class="text-xs font-semibold uppercase tracking-widest text-amber-500"
               >
                 Residential
               </span>
 
-              <h3 class="mt-3 text-3xl font-black">Complete Home Rewire</h3>
+              <h3 class="mt-2 text-xl sm:text-2xl font-bold text-slate-900">Complete Home Rewire</h3>
 
-              <p class="mt-4 leading-7 text-slate-600">
+              <p class="mt-2 text-sm leading-relaxed text-slate-600">
                 Modernized an older home's electrical system with new wiring,
                 lighting and upgraded breaker panel.
               </p>
@@ -776,26 +704,25 @@
           </article>
 
           <!-- Project 2 -->
-
-          <article class="group overflow-hidden rounded-3xl bg-white shadow-xl">
+          <article class="group overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-md transition hover:shadow-xl">
             <div class="overflow-hidden">
               <img
                 src="/images/projects/commercial-light.jpg"
-                alt=""
-                class="h-80 w-full object-cover transition duration-700 group-hover:scale-110 filter:saturate(1.15);"
+                alt="Commercial office LED lighting upgrade"
+                class="h-56 sm:h-64 w-full object-cover saturate-[1.15] transition duration-500 group-hover:scale-105"
               />
             </div>
 
-            <div class="p-8">
+            <div class="p-6">
               <span
-                class="text-sm font-semibold uppercase tracking-widest text-amber-500"
+                class="text-xs font-semibold uppercase tracking-widest text-amber-500"
               >
                 Commercial
               </span>
 
-              <h3 class="mt-3 text-3xl font-black">Office Lighting Upgrade</h3>
+              <h3 class="mt-2 text-xl sm:text-2xl font-bold text-slate-900">Office Lighting Upgrade</h3>
 
-              <p class="mt-4 leading-7 text-slate-600">
+              <p class="mt-2 text-sm leading-relaxed text-slate-600">
                 Energy-efficient LED lighting installation for a modern
                 commercial workspace.
               </p>
@@ -803,26 +730,25 @@
           </article>
 
           <!-- Project 3 -->
-
-          <article class="group overflow-hidden rounded-3xl bg-white shadow-xl">
+          <article class="group overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-md transition hover:shadow-xl">
             <div class="overflow-hidden">
               <img
                 src="/images/projects/ev-charger.jpg"
-                alt=""
-                class="h-80 w-full object-cover transition duration-700 group-hover:scale-110 filter:saturate(1.15);"
+                alt="Wall-mounted Level 2 electric vehicle charger installation"
+                class="h-56 sm:h-64 w-full object-cover saturate-[1.15] transition duration-500 group-hover:scale-105"
               />
             </div>
 
-            <div class="p-8">
+            <div class="p-6">
               <span
-                class="text-sm font-semibold uppercase tracking-widest text-amber-500"
+                class="text-xs font-semibold uppercase tracking-widest text-amber-500"
               >
                 EV Charging
               </span>
 
-              <h3 class="mt-3 text-3xl font-black">Level 2 EV Charger</h3>
+              <h3 class="mt-2 text-xl sm:text-2xl font-bold text-slate-900">Level 2 EV Charger</h3>
 
-              <p class="mt-4 leading-7 text-slate-600">
+              <p class="mt-2 text-sm leading-relaxed text-slate-600">
                 Professional EV charging station installation with dedicated
                 circuit protection.
               </p>
@@ -830,26 +756,25 @@
           </article>
 
           <!-- Project 4 -->
-
-          <article class="group overflow-hidden rounded-3xl bg-white shadow-xl">
+          <article class="group overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-md transition hover:shadow-xl">
             <div class="overflow-hidden">
               <img
                 src="/images/projects/outdoor-light.jpg"
-                alt=""
-                class="h-80 w-full object-cover transition duration-700 group-hover:scale-110 filter:saturate(1.15);"
+                alt="Exterior architectural and pathway landscape lighting"
+                class="h-56 sm:h-64 w-full object-cover saturate-[1.15] transition duration-500 group-hover:scale-105"
               />
             </div>
 
-            <div class="p-8">
+            <div class="p-6">
               <span
-                class="text-sm font-semibold uppercase tracking-widest text-amber-500"
+                class="text-xs font-semibold uppercase tracking-widest text-amber-500"
               >
                 Outdoor Lighting
               </span>
 
-              <h3 class="mt-3 text-3xl font-black">Landscape Lighting</h3>
+              <h3 class="mt-2 text-xl sm:text-2xl font-bold text-slate-900">Landscape Lighting</h3>
 
-              <p class="mt-4 leading-7 text-slate-600">
+              <p class="mt-2 text-sm leading-relaxed text-slate-600">
                 Custom exterior lighting designed to improve safety, curb appeal
                 and energy efficiency.
               </p>
@@ -858,49 +783,46 @@
         </div>
 
         <!-- CTA -->
-
-        <div class="mt-20 text-center">
-          <a href="#contact" class="btn btn-primary"> Start Your Project </a>
+        <div class="mt-12 text-center">
+          <a href="#contact" class="btn btn-primary">Start Your Project</a>
         </div>
       </div>
     </section>
 
-    <!-- ===========================
-     TESTIMONIALS
-=========================== -->
 
-    <section id="testimonials" class="reveal bg-white py-32">
+        <!-- ===========================
+         TESTIMONIALS
+    =========================== -->
+    <section id="testimonials" class="reveal bg-white py-20">
       <div class="container">
 
         <!-- Heading -->
-
-        <div class="mx-auto mb-20 max-w-3xl text-center">
+        <div class="mx-auto mb-12 max-w-2xl text-center">
           <span
-            class="inline-flex rounded-full bg-amber-100 px-4 py-2 text-sm font-semibold text-amber-600"
+            class="inline-flex rounded-full bg-amber-100 px-3.5 py-1 text-xs font-semibold tracking-wide text-amber-600"
           >
             CLIENT TESTIMONIALS
           </span>
 
           <!-- Title -->
-
-          <h2 class="mt-6 text-5xl font-black text-slate-900">
+          <h2 class="mt-4 text-3xl sm:text-4xl font-black text-slate-900">
             Trusted By
-            <span class="text-amber-500">Homeowners & Businesses</span>
+            <span class="text-amber-500">Homeowners &amp; Businesses</span>
           </h2>
 
           <!-- Description -->
-          <p class="mt-6 text-lg leading-8 text-slate-600">
+          <p class="mt-4 text-base leading-relaxed text-slate-600">
             We're proud of the relationships we've built and the quality
             workmanship that keeps customers coming back.
           </p>
 
           <!-- Rating -->
-          <div class="mt-10 flex items-center justify-center gap-4">
-            <div class="text-3xl text-amber-500">★★★★★</div>
+          <div class="mt-6 inline-flex items-center justify-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-5 py-3">
+            <div class="text-xl sm:text-2xl text-amber-500">★★★★★</div>
 
             <div class="text-left">
-              <h3 class="font-bold text-xl">5.0 Average Rating</h3>
-              <p class="text-slate-500">
+              <h3 class="font-bold text-base text-slate-900">5.0 Average Rating</h3>
+              <p class="text-xs text-slate-500">
                 Based on hundreds of satisfied customers
               </p>
             </div>
@@ -908,148 +830,148 @@
         </div>
 
         <!-- Layout -->
-
-        <div class="grid gap-8 lg:grid-cols-3">
+        <div class="grid gap-6 lg:grid-cols-3">
 
           <!-- Featured Review -->
-
           <article
-            class="rounded-3xl bg-slate-900 p-10 text-white lg:col-span-2"
+            class="flex flex-col justify-between rounded-2xl bg-slate-900 p-6 sm:p-8 text-white lg:col-span-2 shadow-lg"
           >
-            <div class="text-amber-500 text-3xl">★★★★★</div>
+            <div>
+              <div class="text-amber-500 text-xl">★★★★★</div>
 
-            <p class="mt-8 text-2xl leading-10 font-light">
-              "VoltPro exceeded every expectation. They arrived on time,
-              explained every step, completed the work flawlessly and left our
-              home spotless. We wouldn't hesitate to recommend them."
-            </p>
+              <p class="mt-5 text-lg sm:text-xl leading-relaxed font-light text-slate-100">
+                "VoltPro exceeded every expectation. They arrived on time,
+                explained every step, completed the work flawlessly and left our
+                home spotless. We wouldn't hesitate to recommend them."
+              </p>
+            </div>
 
-            <div class="mt-10 flex items-center gap-5">
+            <div class="mt-8 flex items-center gap-4 pt-6 border-t border-white/10">
               <div
-                class="flex h-16 w-16 items-center justify-center rounded-full bg-amber-500 text-xl font-bold text-slate-900"
+                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-500 text-base font-bold text-slate-900"
               >
                 JS
               </div>
 
               <div>
-                <h4 class="font-bold text-xl">John Smith</h4>
-                <p class="text-slate-400">Residential Customer</p>
+                <h4 class="font-bold text-base text-white">John Smith</h4>
+                <p class="text-xs text-slate-400">Residential Customer · Milton, ON</p>
               </div>
             </div>
           </article>
 
           <!-- Small Reviews -->
-
-          <div class="space-y-8">
+          <div class="space-y-5">
             <article
-              class="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg"
+              class="rounded-2xl border border-slate-200 bg-white p-6 shadow-md"
             >
-              <div class="text-amber-500">★★★★★</div>
+              <div class="text-sm text-amber-500">★★★★★</div>
 
-              <p class="mt-5 leading-8 text-slate-600">
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">
                 Fast service, friendly electricians and transparent pricing.
                 Fantastic experience.
               </p>
 
-              <h4 class="mt-6 font-bold">Sarah M.</h4>
+              <h4 class="mt-4 text-sm font-bold text-slate-900">Sarah M.</h4>
             </article>
 
             <article
-              class="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg"
+              class="rounded-2xl border border-slate-200 bg-white p-6 shadow-md"
             >
-              <div class="text-amber-500">★★★★★</div>
+              <div class="text-sm text-amber-500">★★★★★</div>
 
-              <p class="mt-5 leading-8 text-slate-600">
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">
                 Professional from start to finish. Highly recommend VoltPro.
               </p>
 
-              <h4 class="mt-6 font-bold">Michael R.</h4>
+              <h4 class="mt-4 text-sm font-bold text-slate-900">Michael R.</h4>
             </article>
 
             <article
-              class="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg"
+              class="rounded-2xl border border-slate-200 bg-white p-6 shadow-md"
             >
-              <div class="text-amber-500">★★★★★</div>
+              <div class="text-sm text-amber-500">★★★★★</div>
 
-              <p class="mt-5 leading-8 text-slate-600">
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">
                 Quality workmanship and excellent communication. We'll
                 definitely use them again.
               </p>
 
-              <h4 class="mt-6 font-bold">Emily T.</h4>
+              <h4 class="mt-4 text-sm font-bold text-slate-900">Emily T.</h4>
             </article>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===========================
-     FAQ
-=========================== -->
 
-    <section id="faq" class="reveal bg-slate-100 py-32">
+        <!-- ===========================
+         FAQ
+    =========================== -->
+    <section id="faq" class="reveal bg-slate-100 py-20">
       <div class="container">
-        <div class="mx-auto mb-20 max-w-3xl text-center">
+        <div class="mx-auto mb-12 max-w-2xl text-center">
           <span
-            class="inline-flex rounded-full bg-amber-100 px-4 py-2 text-sm font-semibold text-amber-600"
+            class="inline-flex rounded-full bg-amber-100 px-3.5 py-1 text-xs font-semibold tracking-wide text-amber-600"
           >
             FREQUENTLY ASKED QUESTIONS
           </span>
+
           <!-- Title -->
-          <h2 class="mt-6 text-5xl font-black">
+          <h2 class="mt-4 text-3xl sm:text-4xl font-black text-slate-900">
             Answers To Common
             <span class="text-amber-500">Questions</span>
           </h2>
         </div>
 
-        <div class="mx-auto max-w-4xl space-y-5">
-          <details class="group rounded-3xl bg-white p-8 shadow-lg">
+        <div class="mx-auto max-w-3xl space-y-4">
+          <details class="group rounded-2xl border border-slate-200/80 bg-white p-5 sm:p-6 shadow-md">
             <summary
-              class="cursor-pointer list-none text-xl font-bold flex justify-between"
+              class="cursor-pointer list-none [&::-webkit-details-marker]:hidden text-base sm:text-lg font-bold text-slate-900 flex items-center justify-between gap-4"
             >
-              Do you provide free estimates?
-              <span class="transition group-open:rotate-45">+</span>
+              <span>Do you provide free estimates?</span>
+              <span class="text-xl font-normal text-amber-500 transition-transform duration-200 group-open:rotate-45">+</span>
             </summary>
-            <p class="mt-6 leading-8 text-slate-600">
+            <p class="mt-3 pt-3 border-t border-slate-100 text-sm sm:text-base leading-relaxed text-slate-600">
               Yes. We provide free, no-obligation estimates for residential and
               commercial electrical projects.
             </p>
           </details>
 
-          <details class="group rounded-3xl bg-white p-8 shadow-lg">
+          <details class="group rounded-2xl border border-slate-200/80 bg-white p-5 sm:p-6 shadow-md">
             <summary
-              class="cursor-pointer list-none text-xl font-bold flex justify-between"
+              class="cursor-pointer list-none [&::-webkit-details-marker]:hidden text-base sm:text-lg font-bold text-slate-900 flex items-center justify-between gap-4"
             >
-              Are you licensed and insured?
-              <span class="transition group-open:rotate-45">+</span>
+              <span>Are you licensed and insured?</span>
+              <span class="text-xl font-normal text-amber-500 transition-transform duration-200 group-open:rotate-45">+</span>
             </summary>
-            <p class="mt-6 leading-8 text-slate-600">
+            <p class="mt-3 pt-3 border-t border-slate-100 text-sm sm:text-base leading-relaxed text-slate-600">
               Absolutely. Our electricians are fully licensed and insured,
               ensuring every project meets current electrical codes.
             </p>
           </details>
 
-          <details class="group rounded-3xl bg-white p-8 shadow-lg">
+          <details class="group rounded-2xl border border-slate-200/80 bg-white p-5 sm:p-6 shadow-md">
             <summary
-              class="cursor-pointer list-none text-xl font-bold flex justify-between"
+              class="cursor-pointer list-none [&::-webkit-details-marker]:hidden text-base sm:text-lg font-bold text-slate-900 flex items-center justify-between gap-4"
             >
-              Do you offer emergency service?
-              <span class="transition group-open:rotate-45">+</span>
+              <span>Do you offer emergency service?</span>
+              <span class="text-xl font-normal text-amber-500 transition-transform duration-200 group-open:rotate-45">+</span>
             </summary>
-            <p class="mt-6 leading-8 text-slate-600">
+            <p class="mt-3 pt-3 border-t border-slate-100 text-sm sm:text-base leading-relaxed text-slate-600">
               Yes. Emergency electrical services are available for urgent
               situations that require immediate attention.
             </p>
           </details>
 
-          <details class="group rounded-3xl bg-white p-8 shadow-lg">
+          <details class="group rounded-2xl border border-slate-200/80 bg-white p-5 sm:p-6 shadow-md">
             <summary
-              class="cursor-pointer list-none text-xl font-bold flex justify-between"
+              class="cursor-pointer list-none [&::-webkit-details-marker]:hidden text-base sm:text-lg font-bold text-slate-900 flex items-center justify-between gap-4"
             >
-              What types of projects do you handle?
-              <span class="transition group-open:rotate-45">+</span>
+              <span>What types of projects do you handle?</span>
+              <span class="text-xl font-normal text-amber-500 transition-transform duration-200 group-open:rotate-45">+</span>
             </summary>
-            <p class="mt-6 leading-8 text-slate-600">
+            <p class="mt-3 pt-3 border-t border-slate-100 text-sm sm:text-base leading-relaxed text-slate-600">
               We complete residential, commercial, lighting, panel upgrades, EV
               charger installations, renovations and more.
             </p>
@@ -1058,15 +980,15 @@
       </div>
     </section>
 
-    <!-- ===========================
-     CONTACT
-=========================== -->
 
+        <!-- ===========================
+         CONTACT
+    =========================== -->
     <section
       id="contact"
-      class="reveal relative overflow-hidden bg-slate-950 py-32 text-white"
+      class="reveal relative overflow-hidden bg-slate-950 py-20 text-white"
     >
-    <!-- Background Pattern -->
+      <!-- Background Pattern -->
       <div
         class="absolute inset-0 opacity-5"
         style="
@@ -1078,153 +1000,160 @@
       ></div>
 
       <div class="container relative z-10">
-        <div class="mx-auto mb-20 max-w-3xl text-center">
+        <div class="mx-auto mb-12 max-w-2xl text-center">
 
           <!-- Badge -->
-
           <span
-            class="inline-flex rounded-full border border-amber-500/30 bg-amber-500/10 px-4 py-2 text-sm font-semibold text-amber-400"
+            class="inline-flex rounded-full border border-amber-500/30 bg-amber-500/10 px-3.5 py-1 text-xs font-semibold tracking-wide text-amber-400"
           >
             GET STARTED
           </span>
+
           <!-- Title -->
-          <h2 class="mt-6 text-5xl font-black">
+          <h2 class="mt-4 text-3xl sm:text-4xl font-black">
             Ready To Power
-            <span class="text-amber-500"> Your Next Project? </span>
+            <span class="text-amber-500">Your Next Project?</span>
           </h2>
+
           <!-- Description -->
-          <p class="mt-6 text-lg text-slate-300 leading-8">
+          <p class="mt-4 text-base text-slate-300 leading-relaxed">
             Contact our team today for a free estimate. We're here to answer
             your questions and help with your next electrical project.
           </p>
         </div>
 
-        <!-- Contact Info-->
+        <!-- Contact Grid -->
+        <div class="grid items-start gap-8 lg:grid-cols-2">
 
-        <div class="grid gap-12 lg:grid-cols-2">
-          <div class="space-y-8">
-            <div class="glass rounded-3xl p-8">
-              <h3 class="text-2xl font-bold">Contact Information</h3>
+          <!-- Contact Info -->
+          <div>
+            <div class="glass rounded-2xl p-6 sm:p-8">
+              <h3 class="text-xl sm:text-2xl font-bold text-white">Contact Information</h3>
 
-              <div class="mt-8 space-y-6 text-slate-300">
-                <p>
-                  <i class="fa-solid fa-phone text-amber-500"></i> (555)
-                  123-4567
+              <div class="mt-6 space-y-4 text-sm sm:text-base text-slate-300">
+                <p class="flex items-center gap-3">
+                  <i class="fa-solid fa-phone w-5 text-center text-amber-500"></i>
+                  <a href="tel:5551234567" class="hover:text-amber-400 transition">(555) 123-4567</a>
                 </p>
 
-                <p>
-                  <i class="fa-solid fa-envelope text-blue-400"></i>
-                  hello@voltpro.com
+                <p class="flex items-center gap-3">
+                  <i class="fa-solid fa-envelope w-5 text-center text-blue-400"></i>
+                  <a href="mailto:hello@voltpro.com" class="hover:text-amber-400 transition">hello@voltpro.com</a>
                 </p>
 
-                <p>
-                  <i class="fa-solid fa-map-marker-alt text-red-600"></i> 123
-                  Main Street, Your City
+                <p class="flex items-center gap-3">
+                  <i class="fa-solid fa-location-dot w-5 text-center text-red-500"></i>
+                  <span>123 Main Street, Milton, ON</span>
                 </p>
 
-                <p>
-                  <i class="fa-solid fa-clock text-amber-50"></i> Mon - Fri:
-                  8:00 AM - 6:00 PM
+                <p class="flex items-center gap-3">
+                  <i class="fa-solid fa-clock w-5 text-center text-amber-300"></i>
+                  <span>Mon - Fri: 8:00 AM - 6:00 PM</span>
                 </p>
 
-                <p>
-                  <i class="fa-solid fa-bolt text-amber-200"></i> 24/7 Emergency
-                  Service
+                <p class="flex items-center gap-3">
+                  <i class="fa-solid fa-bolt w-5 text-center text-amber-400"></i>
+                  <span>24/7 Emergency Service</span>
                 </p>
               </div>
             </div>
           </div>
 
           <!-- Form -->
-
-          <form class="rounded-3xl bg-white text-slate-500 p-10 shadow-2xl">
+          <form class="rounded-2xl bg-white text-slate-900 p-6 sm:p-8 shadow-2xl">
             <input
-              class="mb-5 w-full rounded-xl border border-slate-200 px-5 py-4"
+              class="mb-4 w-full rounded-xl border border-slate-200 px-4 py-3 text-sm sm:text-base text-slate-900 placeholder-slate-400 focus:border-amber-500 focus:outline-none transition"
               type="text"
+              name="name"
               placeholder="Your Name"
+              required
             />
 
             <input
-              class="mb-5 w-full rounded-xl border border-slate-200 px-5 py-4"
+              class="mb-4 w-full rounded-xl border border-slate-200 px-4 py-3 text-sm sm:text-base text-slate-900 placeholder-slate-400 focus:border-amber-500 focus:outline-none transition"
               type="email"
+              name="email"
               placeholder="Email Address"
+              required
             />
 
             <input
-              class="mb-5 w-full rounded-xl border border-slate-200 px-5 py-4"
+              class="mb-4 w-full rounded-xl border border-slate-200 px-4 py-3 text-sm sm:text-base text-slate-900 placeholder-slate-400 focus:border-amber-500 focus:outline-none transition"
               type="tel"
+              name="phone"
               placeholder="Phone Number"
             />
 
             <textarea
-              rows="6"
-              class="mb-6 w-full rounded-xl border border-slate-200 px-5 py-4"
+              rows="4"
+              name="message"
+              class="mb-5 w-full rounded-xl border border-slate-200 px-4 py-3 text-sm sm:text-base text-slate-900 placeholder-slate-400 focus:border-amber-500 focus:outline-none transition resize-none"
               placeholder="Tell us about your project..."
+              required
             ></textarea>
 
-            <button class="btn btn-primary w-full">Request Free Quote</button>
+            <button type="submit" class="btn btn-primary w-full">Request Free Quote</button>
           </form>
         </div>
       </div>
     </section>
 
-    <!-- ===========================
-     FOOTER
-=========================== -->
 
-    <footer class="bg-slate-900 py-16 text-slate-400">
+        <!-- ===========================
+         FOOTER
+    =========================== -->
+    <footer class="bg-slate-900 border-t border-white/10 py-12 text-slate-400">
       <div class="container">
-        <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4 text-sm">
           <div>
-            <h3 class="text-3xl font-black text-white">
+            <a href="#hero" class="text-2xl font-black text-white tracking-tight">
               Volt<span class="text-amber-500">Pro</span>
-            </h3>
+            </a>
 
-            <p class="mt-6 leading-8">
+            <p class="mt-4 leading-relaxed">
               Professional residential and commercial electrical services with
               quality workmanship and dependable customer care.
             </p>
           </div>
 
           <div>
-            <h4 class="mb-6 text-white font-bold">Services</h4>
+            <h4 class="mb-4 text-white font-bold uppercase tracking-wider text-xs">Services</h4>
 
-            <ul class="space-y-3">
-              <li>Residential Wiring</li>
-              <li>Commercial</li>
-              <li>Panel Upgrades</li>
-              <li>EV Chargers</li>
+            <ul class="space-y-2.5">
+              <li><a href="#services" class="hover:text-amber-400 transition">Residential Wiring</a></li>
+              <li><a href="#services" class="hover:text-amber-400 transition">Commercial</a></li>
+              <li><a href="#services" class="hover:text-amber-400 transition">Panel Upgrades</a></li>
+              <li><a href="#services" class="hover:text-amber-400 transition">EV Chargers</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 class="mb-6 text-white font-bold">Company</h4>
+            <h4 class="mb-4 text-white font-bold uppercase tracking-wider text-xs">Company</h4>
 
-            <ul class="space-y-3">
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#faq">FAQ</a></li>
-              <li><a href="#contact">Contact</a></li>
+            <ul class="space-y-2.5">
+              <li><a href="#about" class="hover:text-amber-400 transition">About</a></li>
+              <li><a href="#projects" class="hover:text-amber-400 transition">Projects</a></li>
+              <li><a href="#faq" class="hover:text-amber-400 transition">FAQ</a></li>
+              <li><a href="#contact" class="hover:text-amber-400 transition">Contact</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 class="mb-6 text-white font-bold">Contact</h4>
+            <h4 class="mb-4 text-white font-bold uppercase tracking-wider text-xs">Contact</h4>
 
-            <ul class="space-y-3">
-              <li>(555) 123-4567</li>
-              <li>hello@voltpro.com</li>
-
-              
-              <li>Your City</li>
+            <ul class="space-y-2.5">
+              <li><a href="tel:5551234567" class="hover:text-amber-400 transition">(555) 123-4567</a></li>
+              <li><a href="mailto:hello@voltpro.com" class="hover:text-amber-400 transition">hello@voltpro.com</a></li>
+              <li>Milton, ON</li>
             </ul>
           </div>
         </div>
 
-        <div class="mt-16 border-t border-white/10 pt-8 text-center">
-          © 2026 VoltPro Electrical. All Rights Reserved.
+        <div class="mt-10 border-t border-white/10 pt-6 text-center text-xs text-slate-500">
+          &copy; 2026 VoltPro Electrical. All Rights Reserved.
         </div>
       </div>
     </footer>
+
   </body>
 </html>

@@ -16,12 +16,17 @@ body {
 }
 
 .section {
-  padding: 7rem 0;
+  padding: 5rem 0;
 }
 
 /* Buttons */
 .btn {
-  @apply items-center justify-center rounded-xl px-6 py-3 font-semibold transition-all duration-300;
+  @apply inline-flex items-center justify-center rounded-xl px-6 py-3 font-semibold transition-all duration-300 cursor-pointer;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 35px rgba(245, 158, 11, 0.3);
 }
 
 .btn-primary {
@@ -37,16 +42,13 @@ body {
   transition: 0.35s;
 }
 
-/*  */
 #navbar.scrolled {
   background: rgba(255, 255, 255, 0.9);
-
   backdrop-filter: blur(20px);
-
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
-/* logo and menu bar colors */
+/* Logo and menu bar colors */
 .logo-primary {
   color: white;
   transition: 0.3s;
@@ -55,16 +57,15 @@ body {
 /* Menu Button */
 .menu-btn {
   color: white;
-  font-size: 2rem;
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
   transition: 0.3s;
 }
 
-#navbar.scrolled .logo-primary {
-  color: #0f172a; /* slate-900 */
-}
-
+#navbar.scrolled .logo-primary,
 #navbar.scrolled .menu-btn {
-  color: #0f172a;
+  color: #0f172a; /* slate-900 */
 }
 
 .nav-link {
@@ -75,31 +76,22 @@ body {
 /* Navigation Link Underline */
 .nav-link::after {
   content: "";
-
   position: absolute;
-
   left: 50%;
   bottom: -8px;
-
   width: 0;
   height: 3px;
-
   transform: translateX(-50%);
-
   background: #f59e0b;
-
   border-radius: 999px;
-
   box-shadow:
     0 0 10px #f59e0b,
     0 0 20px rgba(245, 158, 11, 0.6);
-
   transition: 0.3s;
 }
 
 .nav-link:hover {
   color: #fbbf24;
-
   text-shadow: 0 0 12px rgba(245, 158, 11, 0.5);
 }
 
@@ -107,63 +99,43 @@ body {
   width: 100%;
 }
 
-/* HERO IMAGE */
-
-#hero img {
-  animation: float 6s ease-in-out infinite;
-
-  filter: drop-shadow(0 40px 80px rgba(0, 0, 0, 0.45));
+/* Hero Headline & Image */
+#hero h1 {
+  letter-spacing: -0.025em;
 }
 
-/* HERO HEADLINE */
-
-#hero h1 {
-  letter-spacing: -3px;
+#hero img {
+  animation: float 5s ease-in-out infinite;
+  filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.45));
 }
 
 /* Glass Cards */
-
 .glass {
   background: rgba(255, 255, 255, 0.08);
-
   backdrop-filter: blur(18px);
-
   border: 1px solid rgba(255, 255, 255, 0.12);
-
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
 }
 
 /* ============================
-   Hero Animations
+   Hero & Scroll Animations
 ============================ */
-
 @keyframes float {
   0%,
   100% {
     transform: translateY(0);
   }
-
   50% {
     transform: translateY(-10px);
   }
-
-  100% {
-    transform: translateY(0px);
-  }
 }
-
-#hero img {
-  animation: float 5s ease-in-out infinite;
-}
-
-/* reveal */
 
 .reveal {
   opacity: 0;
-  transform: translateY(60px);
+  transform: translateY(40px);
   transition:
-    opacity 0.8s ease,
-    transform 0.8s ease;
+    opacity 0.7s ease,
+    transform 0.7s ease;
 }
 
 .reveal.active {
@@ -171,12 +143,14 @@ body {
   transform: none;
 }
 
-.btn {
-  transition: 0.35s;
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  #hero img {
+    animation: none;
+  }
 }
 
-.btn:hover {
-  transform: translateY(-4px);
-
-  box-shadow: 0 18px 45px rgba(245, 158, 11, 0.35);
-}

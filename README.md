@@ -2,87 +2,98 @@
 
 A modern, responsive Vite-powered HTML template designed for electricians, electrical contractors, repair services, and other home service businesses.
 
-
-**Live Demo:** https://html-electrician.netlify.app/
+**Live Demo:** [https://html-electrician.netlify.app/](https://html-electrician.netlify.app/)
 
 ---
 
 ## Features
 
-- Built with Vite
-- Tailwind CSS
-- Responsive mobile-first design
-- Clean, modern layout
+- Built with **Vite** and **Tailwind CSS 4.x**
+- Responsive mobile-first design with sticky scroll navbar and mobile drawer
+- Clean, modern layout with glassmorphic highlights
 - SEO-friendly HTML5 markup
-- Smooth scrolling
-- Hero banner
-- Service sections
-- About section
-- Testimonials
-- FAQ section
-- Contact form
-- Google Maps integration
+- Smooth scrolling and scroll-reveal section animations
+- Animated experience and project counters
+- Hero banner with trust bar highlights
+- Services grid, About + Why Choose Us, and Featured Projects sections
+- Client testimonials and interactive FAQ accordion
+- Static contact form and contact info card
 - Font Awesome icons
-- Easy to customize
-- Cross-browser compatible
+- Easy to customize and cross-browser compatible
 
 ---
 
-## Pages
+## Sections
 
-- Home
-- About
-- Services
-- FAQ
-- Contact
-- Projects
+- Home (`#hero`)
+- Trust Highlights (`#trust`)
+- Services (`#services`)
+- About & Why Choose Us (`#about`)
+- Featured Projects (`#projects`)
+- Testimonials (`#testimonials`)
+- FAQ (`#faq`)
+- Contact (`#contact`)
 
 ---
 
 ## Folder Structure
 
+```text
 .
-|__public
-    |__images/
-|       |__ about/
-|           |__ 3electricians.jpg
-|       |__ hero/
-|           |__ electrician.jpg
-|       |__ projects/
-|           |__ commercial-light.jpg
-|           |__ ev-charger.jpg
-|           |__ interior-light.jpg
-|           |__ outdoor-light.jpg
+├── public/
+│   └── images/
+│       ├── about/
+│       │   └── 3electricians.jpg
+│       ├── hero/
+│       │   └── electrician.jpg
+│       └── projects/
+│           ├── commercial-light.jpg
+│           ├── ev-charger.jpg
+│           ├── interior-light.jpg
+│           └── outdoor-light.jpg
 ├── src/
 │   ├── assets/
 │   ├── main.js
-│   ├── style.css
+│   └── style.css
 ├── index.html
 ├── package-lock.json
 ├── package.json
 ├── vite.config.js
-└── README
-└── LICENCE
+├── README.md
+└── LICENSE
+```
 
 ---
 
 ## Requirements
 
-- Node.js 18 or newer
-- npm 9 or newer
+- **Node.js 18** or newer
+- **npm 9** or newer
 
 ---
 
 ## Getting Started
 
-1.  Extract the downloaded template folder.
-2.  In the editor of your choice open a terminal inside the project folder.
--   example: cd html-electrician-download
-3.  Install dependencies:  npm install
-4.  Start the development server: npm run dev
--   Your local dev server will run at: http://localhost:5173 (or a similar port)
-5.  Optional Build for Production:  npm run build
--   The optimized production files will be generated in the dist/ folder.
+1. Extract the downloaded template folder.
+
+2. In the editor of your choice, open a terminal inside the project folder:
+   ```bash
+   cd html-electrician-download
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+   Your local dev server will run at `http://localhost:5173` (or the next available port).
+5. Optional — Build for production:
+   ```bash
+   npm run build
+   ```
+   The optimized production files will be generated in the `dist/` folder.
 
 ---
 
@@ -90,40 +101,34 @@ A modern, responsive Vite-powered HTML template designed for electricians, elect
 
 The template is built with Tailwind CSS and Vite.
 
-Most content can be edited directly in the HTML files, while styles can be customized using Tailwind utility classes or your project's CSS files.
+Most content can be edited directly in `index.html`, while custom styles and animations can be adjusted in `src/style.css`:
 
-- Logo
-- Brand colors
+- Logo & brand colors
 - Typography
-- Images
-- Company information
-- Services
-- Contact details
-- Social media links
+- Images (`public/images/`)
+- Company information & service offerings
+- Contact details & phone/email links
 
-## Important
+### Important
 
 Images included with this template are placeholders.
 
-Before publishing your website, replace them with your own images.
-
-Some demo images may require separate licensing and must not be redistributed independently of this template.
+Before publishing your website, replace them with your own images. Some demo images may require separate licensing and must not be redistributed independently of this template.
 
 ---
 
 ## Contact Form
 
-This template includes a static contact form and does not process or send messages.
+This template includes a static contact form and does not process or send messages out of the box.
 
 You can connect it to:
 
 - Netlify Forms
 - Google Sheets
 - Formspree
-- Your own backend
+- Web3Forms or your own backend
 
-Integration setup is not included.
-
+*(Integration setup is not included.)*
 
 ---
 
@@ -131,8 +136,8 @@ Integration setup is not included.
 
 - HTML5
 - CSS3
-- Tailwind CSS
-- JavaScript
+- Tailwind CSS 4.x
+- Vanilla JavaScript
 - Font Awesome
 
 ---
@@ -163,11 +168,11 @@ The template is built with performance in mind:
 
 This template is proprietary software.
 
-Purchasing this template grants you a license to use it under the terms outlined in the included LICENSE file.
+Purchasing this template grants you a license to use it under the terms outlined in the included `LICENSE` file.
 
 Redistribution, resale, or sharing of the source files is strictly prohibited.
 
-© 2026 simpleDesigns. All Rights Reserved.
+&copy; 2026 simpleDesigns. All Rights Reserved.
 
 ---
 
@@ -184,7 +189,6 @@ Redistribution, resale, or sharing of the source files is strictly prohibited.
 ## Support
 
 If you discover a bug or have questions about the template, please contact the author using the support channel provided where you purchased the template.
-If you discover an issue or have a suggestion, feel free to open an issue or submit a pull request.
 
 ---
 
@@ -192,6 +196,4 @@ If you discover an issue or have a suggestion, feel free to open an issue or sub
 
 Created by **simpleDesigns**
 
-
----
 
